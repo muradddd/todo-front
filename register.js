@@ -1,5 +1,9 @@
 import { redirect, REGISTER_URL } from './helper.js'
 
+document.getElementById('login').addEventListener('click', function (event) {
+    event.preventDefault();
+    return redirect('login');
+});
 
 document.getElementById('register-form').addEventListener('submit', function (event) {
     event.preventDefault();
